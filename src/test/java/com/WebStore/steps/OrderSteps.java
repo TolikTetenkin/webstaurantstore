@@ -94,6 +94,9 @@ public class OrderSteps extends CommonMethods {
 
 		click(cartPage.getEmptyCartPopUpWindowButton());
 
-	}
+		waitForElementBeVisible(cartPage.getYourCartIsEmpty(), 5);
 
+		Assert.assertTrue(cartPage.getYourCartIsEmpty().isDisplayed());
+
+	}
 }

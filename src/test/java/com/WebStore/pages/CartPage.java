@@ -21,6 +21,15 @@ public class CartPage extends BaseClass{
 	
 	@FindBy(xpath="//div[@class='modal fade bs-native modal--sm modal--collapse show']//button[contains(text(),\"Empty Cart\")]")
 	private WebElement emptyCartPopUpWindowButton;
+	
+	@FindBy(css="div[class=\"empty-cart__text\"]")
+	private WebElement yourCartIsEmpty;
+	
+	
+
+	public WebElement getYourCartIsEmpty() {
+		return yourCartIsEmpty;
+	}
 
 	public WebElement getItemTitle() {
 		return itemTitle;

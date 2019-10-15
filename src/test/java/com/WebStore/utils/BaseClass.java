@@ -44,7 +44,7 @@ public class BaseClass {
 	            // options.addArguments("--headless", "--disale-gpu");
 	             //driver = new ChromeDriver(options);
 	        } else if (browserName.equalsIgnoreCase("ie")) {
-	            System.setProperty("webdriver.ie.driver", "src/test/resources/drivers/IEDriverServer");
+	            System.setProperty("webdriver.ie.driver", "src/test/resources/drivers/IEDriverServer.exe");
 	            driver = new InternetExplorerDriver();
 	            //options=new ChromeOptions();
 	            // options.addArguments("--headless", "--disale-gpu");
